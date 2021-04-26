@@ -1,0 +1,39 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'waxxy.live' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for waxxy.live
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'BATabBarController', '~> 2.0.1'
+  pod 'Alamofire', '~> 4.7'
+  pod 'LFLiveKit'
+  pod 'NextLevel', '~> 0.16'
+  pod 'RPCircularProgress', '0.5.0'
+  pod 'Hue', '~> 5.0'
+  pod 'CollapsibleTableSectionViewController', '~> 2.0.1'
+  pod 'CircleBar'
+  pod "WSTagsField"
+  pod 'BraintreeDropIn'
+
+# add pods for desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
+  target 'waxxy.liveTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'waxxy.liveUITests' do
+    # Pods for testing
+  end
+
+end
